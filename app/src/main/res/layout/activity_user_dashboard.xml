@@ -1,0 +1,62 @@
+<!-- res/layout/activity_user_dashboard.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img_1"> <!-- Light Orange background -->
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="292dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="225dp"
+        android:layout_marginBottom="198dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- User Dashboard Title -->
+        <TextView
+            android:id="@+id/userDashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:letterSpacing="0.1"
+            android:text="User Dashboard"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!-- Button for Sports Event Booking -->
+        <Button
+            android:id="@+id/sportsEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF5722"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Sports Event Booking"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Button for Ground Booking -->
+        <Button
+            android:id="@+id/groundBookingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF5722"
+            android:elevation="4dp"
+            android:padding="16dp"
+            android:text="Ground Booking"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

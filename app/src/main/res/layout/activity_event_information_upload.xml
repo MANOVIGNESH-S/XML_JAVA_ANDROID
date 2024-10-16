@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/img_2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Event Information"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FF5722"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/eventDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Date (YYYY-MM-DD)"
+            android:inputType="date"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/eventTypeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Type (e.g., Football, Basketball)"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/eventFeeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Event Fee (e.g., $20)"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/eventParticipationDetailsInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Participation Details"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:minHeight="100dp" />
+
+        <EditText
+            android:id="@+id/eventLocationInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inChargeNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="In-Charge Name"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inChargeNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="In-Charge Contact Number"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:textColor="#2C3E50"
+            android:textColorHint="#7F7F7F"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/uploadEventButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Event"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>

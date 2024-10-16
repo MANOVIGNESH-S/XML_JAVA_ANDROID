@@ -1,0 +1,124 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_bg1"> <!-- Light Yellow background -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <!-- Admin Sign-Up Title -->
+                <TextView
+                    android:id="@+id/adminSignUpTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Admin Sign Up"
+                    android:textColor="#F44336"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:gravity="center" />
+
+                <!-- Name Input -->
+                <EditText
+                    android:id="@+id/adminNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" /> <!-- Custom cursor -->
+
+                <!-- Email Input -->
+                <EditText
+                    android:id="@+id/adminEmailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" /> <!-- Custom cursor -->
+
+                <!-- Mobile Number Input -->
+                <EditText
+                    android:id="@+id/adminMobileInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" /> <!-- Custom cursor -->
+
+                <!-- Password Input -->
+                <EditText
+                    android:id="@+id/adminPasswordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textCursorDrawable="@drawable/custom_cursor" /> <!-- Custom cursor -->
+
+                <!-- Register Button -->
+                <Button
+                    android:id="@+id/adminRegisterButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Register as Admin"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FF5722"
+                    android:elevation="4dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:minHeight="48dp" /> <!-- Ensure minimum touch target size -->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>

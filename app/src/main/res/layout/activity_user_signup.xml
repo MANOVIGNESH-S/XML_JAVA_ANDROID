@@ -1,0 +1,161 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_bg"> <!-- Use gradient as the background -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <!-- User Sign-Up Title -->
+                <TextView
+                    android:id="@+id/userSignUpTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="User Sign Up"
+                    android:textColor="#FF5722"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:gravity="center" />
+
+                <!-- Registration Form Inputs -->
+
+                <!-- Name Input -->
+                <EditText
+                    android:id="@+id/userNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:contentDescription="Name input"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+
+                <!-- Address Input -->
+                <EditText
+                    android:id="@+id/userAddressInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:contentDescription="Address input"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+
+                <!-- Gender Input -->
+                <Spinner
+                    android:id="@+id/userGenderSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:spinnerMode="dropdown"
+                    android:background="@android:color/white"
+                    android:contentDescription="Gender selection"
+                    android:entries="@array/gender_options"
+                    android:prompt="@string/select_gender"
+                    android:textSize="16sp"
+                    android:minHeight="48dp" />
+
+                <!-- Email Input -->
+                <EditText
+                    android:id="@+id/userEmailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:contentDescription="Email input"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+
+                <!-- Mobile Number Input -->
+                <EditText
+                    android:id="@+id/userMobileInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:contentDescription="Mobile number input"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+
+                <!-- Password Input -->
+                <EditText
+                    android:id="@+id/userPasswordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textColorHint="#7F7F7F"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:contentDescription="Password input"
+                    android:textCursorDrawable="@drawable/custom_cursor" />
+
+                <!-- Register Button -->
+                <Button
+                    android:id="@+id/userRegisterButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Register as User"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FF5722"
+                    android:elevation="4dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:minHeight="48dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_bg"> <!-- Use gradient as the background -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp">
+
+                <!-- User Login Title -->
+                <TextView
+                    android:id="@+id/userLoginTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="User Login"
+                    android:textColor="#FF5722"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:gravity="center" />
+
+                <!-- Username Input -->
+                <EditText
+                    android:id="@+id/userUsernameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Username"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textSize="16sp"
+                    android:textColorHint="#7F7F7F"
+                    android:minHeight="48dp" />
+
+                <!-- Password Input -->
+                <EditText
+                    android:id="@+id/userPasswordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:padding="16dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@android:color/white"
+                    android:textColor="#2C3E50"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textColorHint="#7F7F7F" />
+
+                <!-- User Login Button -->
+                <Button
+                    android:id="@+id/userLoginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Login as User"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#FF5722"
+                    android:elevation="4dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:minHeight="48dp" />
+
+                <!-- Sign Up Link -->
+                <TextView
+                    android:id="@+id/userSignUpLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="16dp"
+                    android:text="No Account? Sign Up as User"
+                    android:textColor="#FF5722"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>
